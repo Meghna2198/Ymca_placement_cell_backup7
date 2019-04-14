@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#1d7874"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1d7874"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dip"
+            android:layout_height="150dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/logo"
+             />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="2019-2020"
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/usernameedit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Enter Username"
+            android:padding="20dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:padding="20dp"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:hint="Enter Password"
+            android:inputType="textPassword" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dip"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="4dp"
+                android:ems="10"
+                android:padding="10dip"
+                android:text="LogIn"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/submitbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dip"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="4dp"
+                android:ems="10"
+                android:padding="10dip"
+                android:onClick="fun"
+                android:text="SignUp"
+                android:textColor="#fff"
+                android:textColorLink="#0000"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+    </LinearLayout>
+
+
+</RelativeLayout>

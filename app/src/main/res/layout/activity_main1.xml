@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#1d7874"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#1d7874"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:fillViewport="true"
+        android:scrollbarStyle="insideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1d7874"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/contact_form_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="16dp"
+                android:text="YMCA Placement Cell"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:elevation="4dp"
+                android:typeface="sans" />
+
+            <EditText
+                android:id="@+id/register_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:ems="10"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/register_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/register_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:ems="10"
+                android:hint="Phone"
+                android:inputType="phone"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/register_contact_person"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:ems="10"
+                android:hint="Contact Person Name"
+                android:inputType="textPersonName"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/register_postal_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:ems="10"
+                android:hint="Postal Address"
+                android:inputType="textMultiLine"
+                android:padding="20dp" />
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/register_submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="5dip"
+                    android:ems="10"
+                    android:textSize="20sp"
+                    android:elevation="4dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="SUBMIT"
+                    android:padding="10dip"
+                    android:textAlignment="center"
+                    android:textColor="#fff" />
+
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:padding="10dip"
+                    android:textSize="20sp"
+                    android:elevation="4dp"
+                    android:text="EXIT"
+                    android:textColorLink="#0000"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
