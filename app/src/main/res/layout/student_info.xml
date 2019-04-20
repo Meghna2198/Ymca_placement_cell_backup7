@@ -24,13 +24,13 @@
 
 
             <TextView
-                android:id="@+id/contact_form_title"
+                android:id="@+id/contact_form_title1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="16dp"
-                android:text="Company Registration"
+                android:text="YMCA Placement Cell"
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"
                 android:textSize="25sp"
@@ -38,7 +38,7 @@
                 android:typeface="sans" />
 
             <EditText
-                android:id="@+id/register_name"
+                android:id="@+id/register_sname"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:drawable/dialog_holo_light_frame"
@@ -48,7 +48,7 @@
                 android:padding="20dp" />
 
             <EditText
-                android:id="@+id/register_email"
+                android:id="@+id/register_semail"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -60,7 +60,7 @@
                 android:padding="20dp" />
 
             <EditText
-                android:id="@+id/register_phone"
+                android:id="@+id/register_sphone"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
@@ -71,18 +71,30 @@
                 android:padding="20dp" />
 
             <EditText
-                android:id="@+id/register_contact_person"
+                android:id="@+id/register_sbranch"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:background="@android:drawable/dialog_holo_light_frame"
                 android:ems="10"
-                android:hint="Contact Person Name"
+                android:hint="Branch"
                 android:inputType="textPersonName"
                 android:padding="20dp" />
 
             <EditText
-                android:id="@+id/register_postal_address"
+                android:id="@+id/register_scgpa"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginBottom="10dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:ems="10"
+                android:hint="CGPA"
+                android:inputType="phone"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/register_sphoneaddress"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal|top"
@@ -103,7 +115,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/register_submit"
+                    android:id="@+id/register_Submit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -121,7 +133,7 @@
 
 
                 <Button
-                    android:id="@+id/register_exit_"
+                    android:id="@+id/registerExit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"

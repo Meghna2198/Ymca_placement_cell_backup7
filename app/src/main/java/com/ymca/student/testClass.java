@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class testClass extends Activity {
-    Button signup_button,login_aint_register,login_button1,reqirements_button1;
+    Button signup_button,login_aint_register,login_button1,reqirements_button1,student_button,company_account_button,student_account_button;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.test_activity);
@@ -15,6 +15,9 @@ public class testClass extends Activity {
         login_aint_register = (Button) findViewById(R.id.login_and_not_registered);
         login_button1 = (Button) findViewById(R.id.login_button);
         reqirements_button1 = (Button) findViewById(R.id.company_requirements);
+        student_button=(Button) findViewById(R.id.student_information);
+        company_account_button=(Button)findViewById(R.id.company_account);
+        student_account_button=(Button)findViewById(R.id.student_account);
         signup_button.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -47,6 +50,30 @@ public class testClass extends Activity {
                 requirements_page();
             }
         });
+        student_button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                student_info();
+            }
+        });
+        company_account_button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                company_details();
+            }
+        });
+        student_account_button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                student_details();
+            }
+        });
     }
     public void func1()
     {
@@ -68,5 +95,20 @@ public class testClass extends Activity {
     {
         Intent i4=new Intent(this,requirementsClass.class);
         startActivity(i4);
+    }
+    public void student_info()
+    {
+        Intent i5=new Intent(this,studentInfo.class);
+        startActivity(i5);
+    }
+    public void company_details()
+    {
+        Intent i6=new Intent(this,companyAccount.class);
+        startActivity(i6);
+    }
+    public void student_details()
+    {
+        Intent i7=new Intent(this,studentAccount.class);
+        startActivity(i7);
     }
 }

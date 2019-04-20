@@ -83,6 +83,54 @@
             android:textColorLink="#0000"
             android:textSize="20sp"
             android:text="Requirements_button" />
+        <Button
+            android:id="@+id/student_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="4dp"
+            android:ems="10"
+            android:onClick="student_info"
+            android:padding="10dip"
+            android:textColor="#fff"
+            android:textColorLink="#0000"
+            android:textSize="20sp"
+            android:text="Students_information" />
+        <Button
+            android:id="@+id/company_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="4dp"
+            android:ems="10"
+            android:onClick="student_info"
+            android:padding="10dip"
+            android:textColor="#fff"
+            android:textColorLink="#0000"
+            android:textSize="20sp"
+            android:text="Company Account" />
+        <Button
+            android:id="@+id/student_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="4dp"
+            android:ems="10"
+            android:onClick="student_info"
+            android:padding="10dip"
+            android:textColor="#fff"
+            android:textColorLink="#0000"
+            android:textSize="20sp"
+            android:text="Student Account" />
     </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
