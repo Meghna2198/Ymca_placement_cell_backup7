@@ -30,7 +30,7 @@
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="16dp"
-                android:text="YMCA Placement Cell"
+                android:text="Student Registration"
                 android:textStyle="bold"
                 android:textColor="#FFFFFF"
                 android:textSize="25sp"

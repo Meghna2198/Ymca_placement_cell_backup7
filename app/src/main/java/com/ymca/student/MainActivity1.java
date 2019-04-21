@@ -25,7 +25,7 @@ import java.util.ArrayList;
 
 public class MainActivity1 extends Activity  {
     static MainActivity1 activity=null;
-
+    String usertype;
     EditText editName, editPassword;
     TextView result;
     Button buttonSubmit, buttonLogin;
@@ -55,7 +55,7 @@ public class MainActivity1 extends Activity  {
                 fun();
             }
         });
-      //  ShowAlertDialogWithListview();
+       ShowAlertDialogWithListview();
 
 
 
@@ -68,7 +68,7 @@ public class MainActivity1 extends Activity  {
                 mProgressBar.show();
                 Log.w("url" , "http://mobimonsterit.com/ymca/register_login.php?username=" + editName.getText().toString() + "&password=" + editPassword.getText().toString() + "&UserType=s");
 
-                HttpConnectionHandler.GetTextFileFromServerSimpleURL("http://mobimonsterit.com/ymca/register_login.php?username=" + editName.getText().toString() + "&password=" + editPassword.getText().toString() + "&UserType=s", new IHttpTextReaderCallback() {
+                HttpConnectionHandler.GetTextFileFromServerSimpleURL("http://mobimonsterit.com/ymca/register_login.php?username=" + editName.getText().toString() + "&password=" + editPassword.getText().toString() + "&UserType="+usertype, new IHttpTextReaderCallback() {
 
                     @Override
                     public void dataReceived(final String paramString) {
@@ -79,14 +79,19 @@ public class MainActivity1 extends Activity  {
                         activity.runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                Toast.makeText(MainActivity1.this,"in" + paramString,Toast.LENGTH_SHORT).show();
-                                mProgressBar.dismiss();
-                                if(paramString=="2")
+                                Toast.makeText(MainActivity1.this,"in " + paramString,Toast.LENGTH_SHORT).show();
+                             //   mProgressBar.dismiss();
+
+                                if(paramString.equals("2"))
                                 {
                                     Intent i2=new Intent(MainActivity1.this,activity_main1_class.class);
                                     startActivity(i2);
                                 }
-                              //  mProgressBar.dismiss();
+                                else
+                                {
+                                    Toast.makeText(MainActivity1.this,"Looks like you aren't registered.Please Sign Up",Toast.LENGTH_SHORT).show();
+                                }
+                                mProgressBar.dismiss();
                             }
                         });
                     }
@@ -114,6 +119,11 @@ public class MainActivity1 extends Activity  {
         dialogBuilder.setItems(Animals, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int item) {
                 String selectedText = Animals[item].toString();  //Selected item in listview
+                if(selectedText.equals("Company"))
+                usertype="u";
+                else
+                    usertype="s";
+
             }
         });
         dialogBuilder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {

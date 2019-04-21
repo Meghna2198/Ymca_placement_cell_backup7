@@ -100,7 +100,7 @@ public class requirementsClass extends Activity {
                     public void run() {
                         //Toast.makeText(requirementsClass.this, "Response " + paramString, Toast.LENGTH_SHORT).show();
                         if(paramString.equals("exist"))
-                            Toast.makeText(requirementsClass.this, "Job has been already posted", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(requirementsClass.this, "Job has been posted already!", Toast.LENGTH_SHORT).show();
                         else
                             Toast.makeText(requirementsClass.this, "Job posted successfully", Toast.LENGTH_SHORT).show();
                         mProgressBar.dismiss();
